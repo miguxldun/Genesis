@@ -60,3 +60,11 @@ input:focus{
     transition: .3s ease;
     background-color: #003964;
 }
+@media screen and (max-width: 900px){
+    .container{
+        width: 95%;
+    }
+    #btn{
+        width: 100%;
+    }
+}
