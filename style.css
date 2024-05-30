@@ -91,20 +91,4 @@ footer a:hover{
 footer .ico img{
     width: 100%;
 }
-@media screen and (max-width: 900px){
-    .main{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .log{
-        flex: 1;
-    }
-    .imgs{
-        flex: 1;
-        flex-direction: row;
-    }
-    .imgs img{
-        width: 33.3%;
-    }
-}
+
