@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones del alumno</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="uniminuto-logo.png" alt="Uniminuto Logo" class="logo">
+        <div class="settings">
+            <span id="settings-btn">⚙️</span>
+            <div id="dropdown" class="dropdown-content">
+                <a href="../../login/index.html">Cerrar sesión</a>
+            </div>
+            <span>MIGUEL DAVID VASQUEZ LEYTON</span>
+        </div>
+    </header>
+
+    <nav>
+        <label for="period-select">Pregrado Presencial</label>
+        <select id="period-select" onchange="redireccionar()">
+            <option value="../pregrado presencial 2023-2/index.html">Pregrad Presencial 2023-2</option>
+            <option value="../pregrado presencial 2024-1/index.html">Pregrad Presencial 2024-1</option>
+            <option value="../pregrado presencial 2023-1/index.html">Pregrad Presencial 2023-1</option>
+            <option value="../pregrado presencial 2022-2/index.html">Pregrad Presencial 2022-2</option>
+            <option value="../pregrado presencial 2022-1/index.html">Pregrad Presencial 2022-1</option>
+        </select>
+
+        <label for="course-select">Pregrado</label>
+        <select id="course-select">
+            <option value="all-courses">Todos los cursos</option>
+        </select>
+    </nav>
+
+    <main>
+        <h2>Calificaciones del alumno - MIGUEL DAVID VASQUEZ LEYTON (000832120) CONFIDENCIAL</h2>
+
+        <div class="summary">
+            <div class="summary-item">
+                <h2>Resumen del PGA</h2>
+                <p>Periodo seleccionado: 3,50</p>
+                <p>Institucional: 3,60</p>
+                <p>Transferencia: -</p>
+                <p>Global: 3,60</p>
+            </div>
+            <div class="summary-item">
+                <h2>Currículo principal</h2>
+                <p>Nivel: Pregrado</p>
+                <p>Escuela: Facultad de Ingeniería</p>
+                <p>Grado: Ingeniero (a) de Sistemas</p>
+                <p>Programa: INGENIERIA DE SISTEMAS</p>
+            </div>
+        </div>
+
+        <div class="grades">
+            <h2>Trabajo del curso</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Título del curso</th>
+                        <th>Campus</th>
+                        <th>Calificación</th>
+                        <th>Calificación final</th>
+                        <th>Horas intentadas</th>
+                        <th>Horas ganadas</th>
+                        <th>Horas del PGA</th>
+                        <th>Puntos de calificación</th>
+                        <th>NRC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PSIC BG012, 5</td>
+                        <td>ELECTIVA CMD</td>
+                        <td>UMD</td>
+                        <td>3.5</td>
+                        <td>3.8</td>
+                        <td>2,000</td>
+                        <td>0,000</td>
+                        <td>2,000</td>
+                        <td>2,60</td>
+                        <td>1821</td>
+                    </tr>
+                    <tr>
+                        <td>ESTA 1080, 10</td>
+                        <td>PROBABILIDAD Y ESTADISTICA</td>
+                        <td>UMD</td>
+                        <td>3.5</td>
+                        <td>3.0</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>6,00</td>
+                        <td>2381</td>
+                    </tr>
+                    <tr>
+                        <td>FISI 1040, 1</td>
+                        <td>FISICA ELECTRICA</td>
+                        <td>UMD</td>
+                        <td>1.2</td>
+                        <td>CA</td>
+                        <td>3,000</td>
+                        <td>0,000</td>
+                        <td>3,000</td>
+                        <td>0,00</td>
+                        <td>2620</td>
+                    </tr>
+                    <tr>
+                        <td>PRAC 1020, 71</td>
+                        <td>DESARROLLO SOCIAL CONTEMPORANEO</td>
+                        <td>UMD</td>
+                        <td>3.5</td>
+                        <td>3.1</td>
+                        <td>2,000</td>
+                        <td>0,000</td>
+                        <td>2,000</td>
+                        <td>6,20</td>
+                        <td>3327</td>
+                    </tr>
+                    <tr>
+                        <td>INGL 1030, 80</td>
+                        <td>INGLES III</td>
+                        <td>UMD</td>
+                        <td>3.4</td>
+                        <td>4.4</td>
+                        <td>2,000</td>
+                        <td>0,000</td>
+                        <td>2,000</td>
+                        <td>1,20</td>
+                        <td>3714</td>
+                    </tr>
+                    <tr>
+                        <td>INGL 1030, 62</td>
+                        <td>INGLES III</td>
+                        <td>UMD</td>
+                        <td>CA</td>
+                        <td>CA</td>
+                        <td>3,000</td>
+                        <td>0,000</td>
+                        <td>3,000</td>
+                        <td>0,00</td>
+                        <td>3843</td>
+                    </tr>
+                    <tr>
+                        <td>ISUM BG193, 1</td>
+                        <td>BASES DE DATOS</td>
+                        <td>UMD</td>
+                        <td>4.2</td>
+                        <td>4.2</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>9,60</td>
+                        <td>61358</td>
+                    </tr>
+                    <tr>
+                        <td>ISUM BG113, 10</td>
+                        <td>Redes de Computadores</td>
+                        <td>UMD</td>
+                        <td>3.8</td>
+                        <td>4.5</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>10,50</td>
+                        <td>61768</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">ELECTIVA CMD</a>
+                <p>
+                    PSIC BG012, 5
+                </p>
+                <p>
+                    2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.8</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">PROBABILIDAD Y ESTADISTICA</a>
+                <p>
+                    ESTA 1080, 10
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.0</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">FISICA ELECTRICA</a>
+                <p>
+                    FISI 1040, 1
+                </p>
+                <p>
+                    Horas intentadas: 3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>CA</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">DESARROLLO SOCIAL CONTEMPORANEO</a>
+                <p>
+                    PRAC 1020, 71
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.1</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">NGLES III</a>
+                <p>
+                    INGL 1030, 80
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.4</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">INGLES III</a>
+                <p>
+                    INGL 1030, 62
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>CA</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">BASES DE DATOS</a>
+                <p>
+                    ISUM BG193, 1
+                </p>
+                <p>
+                    Horas intentadas: 3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.2</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">Redes de Computadores</a>
+                <p>
+                    ISUM BG113, 10
+                </p>
+                <p>
+                    Horas intentadas: 3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.5</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2013-2022 Ellucian Company L.P. y sus afiliados. Todos los derechos reservados.
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

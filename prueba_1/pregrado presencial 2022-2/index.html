@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones del alumno</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="uniminuto-logo.png" alt="Uniminuto Logo" class="logo">
+        <div class="settings">
+            <span id="settings-btn">⚙️</span>
+            <div id="dropdown" class="dropdown-content">
+                <a href="../../login/index.html">Cerrar sesión</a>
+            </div>
+            <span>MIGUEL DAVID VASQUEZ LEYTON</span>
+        </div>
+    </header>
+
+    <nav>
+        <label for="period-select">Pregrado Presencial</label>
+        <select id="period-select" onchange="redireccionar()">
+            <option value="../pregrado presencial 2022-2/index.html">Pregrad Presencial 2022-2</option>
+            <option value="../pregrado presencial 2024-1/index.html">Pregrad Presencial 2024-1</option>
+            <option value="../pregrado presencial 2023-2/index.html">Pregrad Presencial 2023-2</option>
+            <option value="../pregrado presencial 2023-1/index.html">Pregrad Presencial 2023-1</option>
+            <option value="../pregrado presencial 2022-1/index.html">Pregrad Presencial 2022-1</option>
+        </select>
+
+        <label for="course-select">Pregrado</label>
+        <select id="course-select">
+            <option value="all-courses">Todos los cursos</option>
+        </select>
+    </nav>
+
+    <main>
+        <h2>Calificaciones del alumno - MIGUEL DAVID VASQUEZ LEYTON (000832120) CONFIDENCIAL</h2>
+
+        <div class="summary">
+            <div class="summary-item">
+                <h2>Resumen del PGA</h2>
+                <p>Periodo seleccionado: 3,60</p>
+                <p>Institucional: 3,80</p>
+                <p>Transferencia: -</p>
+                <p>Global: 3,80</p>
+            </div>
+            <div class="summary-item">
+                <h2>Currículo principal</h2>
+                <p>Nivel: Pregrado</p>
+                <p>Escuela: Facultad de Ingeniería</p>
+                <p>Grado: Ingeniero (a) de Sistemas</p>
+                <p>Programa: INGENIERIA DE SISTEMAS</p>
+            </div>
+        </div>
+
+        <div class="grades">
+            <h2>Trabajo del curso</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Título del curso</th>
+                        <th>Campus</th>
+                        <th>Calificación parcial</th>
+                        <th>Calificación final</th>
+                        <th>Horas intentadas</th>
+                        <th>Horas ganadas</th>
+                        <th>Horas del PGA</th>
+                        <th>Puntos de calificación</th>
+                        <th>NRC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>INGL 1010, 115</td>
+                        <td>INGLES I</td>
+                        <td>UMD</td>
+                        <td></td>
+                        <td>4.0</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>12,00</td>
+                        <td>12622</td>
+                    </tr>
+                    <tr>
+                        <td>LENG 1020, 203</td>
+                        <td>COM ESCRITA Y PROCE LECT II</td>
+                        <td>UMD</td>
+                        <td>3.6</td>
+                        <td>3.4</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>6,00</td>
+                        <td>2381</td>
+                    </tr>
+                    <tr>
+                        <td>MATE 1036, 22</td>
+                        <td>ALGEBRA LINEAL</td>
+                        <td>UMD</td>
+                        <td>4.1</td>
+                        <td>3.5</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>7,00</td>
+                        <td>21216</td>
+                    </tr>
+                    <tr>
+                        <td>ADMI 1060, 25</td>
+                        <td>PROGRAMACION ORIENTADA OBJET</td>
+                        <td>UMD</td>
+                        <td>2.7</td>
+                        <td>4.1</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>8,20</td>
+                        <td>21612</td>
+                    </tr>
+                    <tr>
+                        <td>INGL 1030, 80</td>
+                        <td>EMPRENDIMIENTO</td>
+                        <td>UMD</td>
+                        <td>4.0</td>
+                        <td>4.1</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>8,20</td>
+                        <td>237</td>
+                    </tr>
+                    <tr>
+                        <td>IAGR 160, 38</td>
+                        <td>METODOLOGIA DE LA INVESTIGACI</td>
+                        <td>UMD</td>
+                        <td>3.0</td>
+                        <td>3.4</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>6,80</td>
+                        <td>24197</td>
+                    </tr>
+                    <tr>
+                        <td>MATE 1061, 17</td>
+                        <td>CALCULO DIFERENCIAL</td>
+                        <td>UMD</td>
+                        <td>3.0</td>
+                        <td>4.2</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>3,000</td>
+                        <td>9,00</td>
+                        <td>3731</td>
+                    </tr>
+                    <tr>
+                        <td>FHUM 1020, 17</td>
+                        <td>Catedra Minuto de Dios</td>
+                        <td>UMD</td>
+                        <td>4.2</td>
+                        <td>3.8</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>2,000</td>
+                        <td>7,60</td>
+                        <td>4552</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">INGLES I</a>
+                <p>
+                    INGL 1010, 115
+                </p>
+                <p>
+                    3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.4</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">COM ESCRITA Y PROCE LECT II</a>
+                <p>
+                    LENG 1020, 203
+                </p>
+                <p>
+                    Horas intentadas: 3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.4</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">ALGEBRA LINEAL</a>
+                <p>
+                    MATE 1036, 22
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.5</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">PROGRAMACION ORIENTADA OBJET</a>
+                <p>
+                    ADMI 1060, 25
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.1</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">EMPRENDIMIENTO</a>
+                <p>
+                    INGL 1030, 80
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.1</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">METODOLOGIA DE LA INVESTIGACI</a>
+                <p>
+                    IAGR 160, 38
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.4</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">CALCULO DIFERENCIAL</a>
+                <p>
+                    MATE 1061, 17
+                </p>
+                <p>
+                    Horas intentadas: 3,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>4.2</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+        <div class="notas-mobile">
+            <div class="info">
+                <a href="">Catedra Minuto de Dios</a>
+                <p>
+                    FHUM 1020, 17
+                </p>
+                <p>
+                    Horas intentadas: 2,000
+                </p>
+            </div>
+            <div class="nota">
+                <h3>3.8</h3>
+                <p>
+                    Calificación parcial
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2013-2022 Ellucian Company L.P. y sus afiliados. Todos los derechos reservados.
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

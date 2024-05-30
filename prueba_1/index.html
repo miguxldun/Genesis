@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones del alumno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="uniminuto-logo.png" alt="Uniminuto Logo" class="logo">
+        <div class="settings">
+            <span id="settings-btn">⚙️</span>
+            <div id="dropdown" class="dropdown-content">
+                <a href="../../login/index.html">Cerrar sesión</a>
+            </div>
+            <span>MIGUEL DAVID VASQUEZ LEYTON</span>
+        </div>
+    </header>
+
+    <nav>
+        <label for="period-select">Pregrado Presencial</label>
+        <select id="period-select" onchange="redireccionar()">
+            <option value="">--SELECCIONE PERIODO--</option>
+            <option value="pregrado presencial 2024-1/index.html">Pregrad Presencial 2024-1</option>
+            <option value="pregrado presencial 2023-2/index.html">Pregrad Presencial 2023-2</option>
+            <option value="pregrado presencial 2023-1/index.html">Pregrad Presencial 2023-1</option>
+            <option value="pregrado presencial 2022-2/index.html">Pregrad Presencial 2022-2</option>
+            <option value="pregrado presencial 2022-1/index.html">Pregrad Presencial 2022-1</option>
+        </select>
+
+        <label for="course-select">Pregrado</label>
+        <select id="course-select">
+            <option value="all-courses">Todos los cursos</option>
+        </select>
+    </nav>
+
+    <main>
+        <h2>Calificaciones del alumno - MIGUEL DAVID VASQUEZ LEYTON (000832120) CONFIDENCIAL</h2>
+        
+        <div class="summary">
+            <div class="summary-item">
+                <h2>Resumen del PGA</h2>
+                <p>Periodo seleccionado: ---</p>
+                <p>Institucional: ---</p>
+                <p>Transferencia: -</p>
+                <p>Global: 3,80</p>
+            </div>
+            <div class="summary-item">
+                <h2>Currículo principal</h2>
+                <p>Nivel: Pregrado</p>
+                <p>Escuela: Facultad de Ingeniería</p>
+                <p>Grado: Ingeniero (a) de Sistemas</p>
+                <p>Programa: INGENIERIA DE SISTEMAS</p>
+            </div>
+        </div>
+
+        <div class="grades">
+            <h2>Trabajo del curso</h2>
+            <h3>Seleccione un periodo.</h3>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2013-2022 Ellucian Company L.P. y sus afiliados. Todos los derechos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
