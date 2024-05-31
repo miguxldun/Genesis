@@ -60,11 +60,15 @@ input:focus{
     transition: .3s ease;
     background-color: #003964;
 }
-@media screen and (max-width: 900px){
-    .container{
-        width: 95%;
-    }
-    #btn{
-        width: 100%;
-    }
+.error-message {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    background-color: rgba(248, 0, 0, 0.479);
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 1000;
 }

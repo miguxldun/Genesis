@@ -9,6 +9,20 @@
     
     <link rel="stylesheet" href="style.css">
     <title>Login | UNIMINUTO</title>
+    <style>
+        .error-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 1em 2em;
+            border-radius: 5px;
+            font-size: 1.2em;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
@@ -16,7 +30,7 @@
             <img src="../imgs/login.png" alt="">
         </div>
         <div class="form">
-            <form action="../prueba_1/index.html">
+            <form id="loginForm">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
                 <label for="pass">Contraseña</label>
@@ -26,5 +40,33 @@
             <a href="#">Olvidé mi contraseña</a>
         </div>
     </main>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Evitar que el formulario se envíe automáticamente
+            event.preventDefault();
+            
+            // Obtener los valores de correo y contraseña
+            var correo = document.getElementById('correo').value;
+            var pass = document.getElementById('pass').value;
+            
+            // Validar los datos
+            if (correo === 'miguel.vasquez@uniminuto.edu.co' && pass === 'qwerty123') {
+                // Si son correctos, redirigir a la otra página
+                window.location.href = '../loginComprobante/index.html';
+            } else {
+                // Si son incorrectos, mostrar un mensaje de error
+                var errorMessage = document.createElement('div');
+                errorMessage.textContent = 'Correo o contraseña incorrectos.';
+                errorMessage.classList.add('error-message');
+                document.body.appendChild(errorMessage);
+
+                // Desaparecer el mensaje después de 10 segundos
+                setTimeout(function() {
+                    errorMessage.remove();
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 </html>
