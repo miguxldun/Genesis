@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Login | UNIMINUTO</title>
+</head>
+<body>
+    <main class="container">
+        <div class="head">
+            <img src="../imgs/login.png" alt="">
+        </div>
+        <div class="form">
+            <form id="loginForm" action="../prueba_1/index.html">
+                <label for="correo">Aprobar la solicitud de inicio se sesión</label>
+                <label for="aplicacion" class="small-label">abra la aplicacion de UWallet y escriba su NRC</label>
+                <input type="password" name="correo" id="correo" placeholder="Ingrese su codigo" required>
+                <label for="verN" class="small-label">¿No ve los números en la aplicación? Compruebe que dispone de la versión más reciente.</label>
+                <input type="submit" value="Ingresar" id="btn">
+            </form>
+        </div>
+        <div class="abajo">
+            <img src="login comprobante.png" alt="">
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Evitar que el formulario se envíe automáticamente
+            event.preventDefault();
+            
+            // Obtener el valor del código
+            var codigo = document.getElementById('correo').value;
+            
+            // Validar el código
+            if (codigo === '832120') {
+                // Si es correcto, redirigir a la otra página
+                window.location.href = '../prueba_1/index.html';
+            } else {
+                // Si es incorrecto, mostrar un mensaje de error
+                var errorMessage = document.createElement('div');
+                errorMessage.textContent = 'Código incorrecto. Inténtelo de nuevo.';
+                errorMessage.classList.add('error-message');
+                document.body.appendChild(errorMessage);
+
+                // Desaparecer el mensaje después de 10 segundos
+                setTimeout(function() {
+                    errorMessage.remove();
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

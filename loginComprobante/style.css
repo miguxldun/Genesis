@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../imgs/body-bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3em;
+}
+
+main .head {
+    width: 100%;
+}
+
+.head img {
+    width: 200px;
+}
+
+label {
+    display: block;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+    padding: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0067b8;
+}
+
+#btn {
+    margin: 2em 0;
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    background-color: #0067b8;
+    color: white;
+    align-self: end;
+    justify-self: flex-end;
+    padding: 0.75em;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btn:hover {
+    transform: translateY(-5px);
+    background-color: #003964;
+}
+
+.abajo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.abajo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* New styles for smaller, non-bold labels */
+.small-label {
+    font-size: 0.875em; /* Adjust the size as needed */
+    font-weight: normal;
+}
+
+.error-message {
+    position: fixed;
+    margin: auto;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    background-color: rgba(248, 0, 0, 0.623);
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    z-index: 1000;
+}
