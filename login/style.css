@@ -1,11 +1,12 @@
-*{
+/* Estilos para computadoras */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-image: url(../imgs/body-bg.png);
     background-position: center;
     background-size: cover;
@@ -15,7 +16,7 @@ body{
     min-height: 100vh;
 }
 
-main{
+main {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -23,29 +24,33 @@ main{
     padding: 3em;
 }
 
-main .head{
+main .head {
     width: 100%;
 }
-.head img{
+
+.head img {
     width: 200px;
 }
 
-label{
+label {
     display: block;
     margin: 1em 0;
     font-weight: bold;
 }
-input{
+
+input {
     width: 100%;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.281);
     padding: 1em;
 }
-input:focus{
+
+input:focus {
     outline: none;
     border-color: #0067b8;
 }
-#btn{
+
+#btn {
     margin: 2em 0;
     width: 30%;
     cursor: pointer;
@@ -55,11 +60,13 @@ input:focus{
     align-self: end;
     justify-self: flex-end;
 }
-#btn:hover{
+
+#btn:hover {
     transform: translateY(-5px);
     transition: .3s ease;
     background-color: #003964;
 }
+
 .error-message {
     position: fixed;
     top: 40%;
@@ -71,4 +78,19 @@ input:focus{
     border-radius: 5px;
     font-size: 1.2em;
     z-index: 1000;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    main {
+        width: 80%; /* Reducimos el ancho para pantallas pequeñas */
+    }
+
+    .head img {
+        width: 50%; /* Reducimos el tamaño del logo para pantallas pequeñas */
+    }
+
+    #btn {
+        width: 100%; /* Hacemos que el botón ocupe todo el ancho en pantallas pequeñas */
+    }
 }
